@@ -4,7 +4,7 @@
   "description": "crud app made using proper file structure, using nodejs, express, postgresql DB, sequelize ORM and Redis DB for caching.",
   "main": "server.js",
   "scripts": {
-    "start":"nodemon server.js",
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Syed Talha Ali",
