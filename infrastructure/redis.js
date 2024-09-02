@@ -1,4 +1,7 @@
+// importing redis.
 const { Redis } = require("ioredis");
+//creating an instance of redis.
 const client = new Redis();
 
-module.exports = {client}
+// exporting redis.
+module.exports = { client };

@@ -1,23 +1,22 @@
+//importing express
 const express = require("express");
+//importing all the required controller functions to be used by the router.
 const {
   addUserController,
   getUsersController,
   updateUserController,
   deleteUserController,
 } = require("../controllers/user.controllers");
+//creating an instance of express Router.
 const router = express.Router();
-// //method, entry-point, function
 
+// route to add user.
 router.route("/addUser").post(addUserController);
+// route to get all users.
 router.route("/").get(getUsersController);
+// route to update user.
 router.route("/updateUser/:id").put(updateUserController);
+// route to delete user.
 router.route("/deleteUser/:id").delete(deleteUserController);
-
-// // router.route("/").get(getUsers);
-// // router.route("/addUser").post(addUser);
-// // router.route("/updateUser/:id").put(updateUser);
-// // router.route("/deleteUser/:id").delete(deleteUser);
-
-// router.route("/addUser").post(addUser);
-
+// exporting the router to be used by the server.
 module.exports = router;
