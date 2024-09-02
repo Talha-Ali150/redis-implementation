@@ -7,7 +7,7 @@ const {
 } = require("../repository/databaseFunctions.js");
 
 // importing the redis client for initiating redis requests.
-const { client } = require("../infrastructure/redis.js");
+const { client } = require("../../infrastructure/redis.js");
 
 //add user logic.
 const addUserService = async (filter) => {
